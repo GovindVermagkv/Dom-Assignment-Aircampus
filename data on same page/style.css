@@ -38,12 +38,14 @@ table{
 }
 
 tr th{
-    background-color: rgb(99, 219, 191);
+    background-color: rgba(29, 187, 29, 0.851);
     border-radius: 5px;
     padding: 10px;
     text-align: center;
     font-weight: bold;
     width: 30%;
+    color: white;
+    font-size: 25px;
 }
 #remove{
     border: none;
@@ -53,7 +55,15 @@ tr th{
     font-weight: bold;
     /* width: 80%; */
     background-color: red;
+    color: white;
     margin-left:20px ;
 
+}
+#show td {
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
 }
  
