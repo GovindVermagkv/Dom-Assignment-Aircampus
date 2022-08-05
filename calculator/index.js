@@ -42,7 +42,7 @@ function value(event){
         show.innerText=Math.tan( show.innerText);
     }
     else if(key=="log"){
-        show.innerText=Math.log( show.innerText);
+        show.innerText=Math.log(( show.innerText));
     }
     else if(key=="x2"){
         show.innerText=eval(( show.innerText)**2);
@@ -57,15 +57,14 @@ function value(event){
         show.innerText=(( show.innerText)*(3.14/180));
     }
     else if(key=="!"){
-        show.innerText = function myfact(fact) {
-            let factorial=1;
-            for (let i = 1; i <= 5; i++) {
-                factorial = factorial * i;
+            let i = display.innerText;
+            let fact = 1;
+            while(i>0){
+              fact = fact*i; 
             }
-            return factorial;
-        }
-        console.log(myfact(factorial))
-    }
+            display.innerText = fact;
+          }
+
     else if(key=="π"){
         show.innerText +=3.14;
     }
