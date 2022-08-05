@@ -16,19 +16,19 @@
     <input type="submit" id="btn" name="btn" value="Add" onclick="AddRow()">
 </form> -->
 <center><h1>Govind Verma</h1></center>
-
-
 <center>
-    <table id="one">
-            <td><input type="text" name="fname" id="fname" placeholder="Full name" required></td>
-        
-            <td><input type="Email" name="email" id="email"placeholder='Email' required></td>
-   
-            <td><input type="text" name="phone" id="phone" placeholder="Phone number" required></td>
+<h2 style="display: none;">Please fill all the details.</h2>
+</center>
+<center>
+        <table id="one">
+                <td><input type="text" name="fname" id="fname" placeholder="Full name" required></td>
+            
+                <td><input type="Email" name="email" id="email"placeholder='Email' required></td>
        
-            <td colspan="2"><input type="submit" name="button" id="button" value="Add" onclick="AddRow()"></td>
-      
-    </table>
+                <td><input type="text" name="phone" id="phone" placeholder="Phone number" required></td>
+           
+                <td colspan="2"><input type="submit" name="button" id="button" value="Add" onclick="AddRow()"></td>
+        </table>
 </center>
 
 <center>
@@ -60,17 +60,22 @@
  list2[x]=document.getElementById("email").value;
  list3[x]=document.getElementById("phone").value;
  list4[x]='<input type="submit" name="remove" id="remove" value="Remove" onclick="removed()">';
+if(list1[x]=="" || list2[x]=="" || list3[x]==""){
+    document.querySelector("h2").style.display = "block";
+    setTimeout(()=>{document.querySelector("h2").style.display = "none"},2000)
+}else{
 
- 
- var cell1=newRow.insertCell(0)
- var cell2=newRow.insertCell(1)
- var cell3=newRow.insertCell(2)
- var cell4=newRow.insertCell(3)
-
- cell1.innerHTML=list1[x];
- cell2.innerHTML=list2[x];
- cell3.innerHTML=list3[x];
- cell4.innerHTML=list4[x];
+    
+    var cell1=newRow.insertCell(0)
+    var cell2=newRow.insertCell(1)
+    var cell3=newRow.insertCell(2)
+    var cell4=newRow.insertCell(3)
+   
+    cell1.innerHTML=list1[x];
+    cell2.innerHTML=list2[x];
+    cell3.innerHTML=list3[x];
+    cell4.innerHTML=list4[x];
+}
 
 
  n++
