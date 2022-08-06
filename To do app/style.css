@@ -1,0 +1,110 @@
+body{
+    background-image: url("bg.jpg");
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.box{
+    background-color:rgba(248, 228, 228, 0.938);
+    height: 300px;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;;
+}
+#box2{
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+#box3{
+    padding: 10px 30px;
+    width: fit-content;
+    height: fit-content;
+}
+.inputfield{
+    position: relative;
+    top: 30%;
+
+}
+.input{
+    background-color: rgba(116, 230, 230, 0.722);
+    /* border: none; */
+    line-height: 25px;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    padding: 5px;
+    text-transform: capitalize;
+    
+}
+.btn{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+}
+
+
+table{
+    width: 100%;
+
+}
+
+tr th{
+    background-color: rgba(15, 129, 139, 0.851);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+tr td{
+    text-transform: capitalize;
+}
+#delete{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    margin-left:20px ;
+
+}
+#edit{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    margin-left:20px ;
+
+}
+#submit{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color:green;
+    color: white;
+    margin-left:20px ;
+
+}
+#show td {
+    border-bottom: 1px solid blue;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+

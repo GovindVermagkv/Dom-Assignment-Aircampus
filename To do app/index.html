@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="box" id="box1">
+            <div class="inputfield">
+                <input type="text" class="input" id="input">
+                <input type="button" value="Add" class="btn" id="btn" onclick="AddRow()">
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <table id="show">
+                <tr>
+                    <th>Mark</th>
+                    <th>Name</th>
+                    <th colspan="3">Action</th>
+                </tr>
+            </table>
+        </div>
+        <div class="box" id="box3">
+            <table id="show2">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Action</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
